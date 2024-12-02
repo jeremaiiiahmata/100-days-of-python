@@ -3,4 +3,4 @@ def my_function() : # the def keyword creates the function, def meaning defining
     print("Bye")
 
 
-my_function()
+my_function() #Calling the function 

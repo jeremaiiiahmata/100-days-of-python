@@ -38,7 +38,6 @@ def game():
     gameOver = False
 
     print(asciiArt.intro)
-    print(RANDOM_NUMBER)
     lives = setDifficulty(lives)
 
     while not gameOver :

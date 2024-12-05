@@ -9,7 +9,6 @@ COUNTRY = "country"
 
 def generateData():
     index = random.randint(0, len(game_data.data)-1)
-
     return game_data.data[index]
 
 def compareCount(a, b):
@@ -41,6 +40,7 @@ print(art.logo)
 optionA = generateData()
 optionB = generateData()
 
+
 while not gameOver:
 
     isDuplicate = checkForDuplicate(optionA, optionB)
@@ -56,7 +56,7 @@ while not gameOver:
             isDuplicate = False
 
     print(f"A : {optionA[NAME]}, a {optionA[DESC]} from {optionA[COUNTRY]}.")
-    print("------VS------")
+    print(art.vs)
     print(f"B : {optionB[NAME]}, a {optionB[DESC]} from {optionB[COUNTRY]}.")
 
     winner = compareCount(optionA, optionB)
@@ -69,11 +69,10 @@ while not gameOver:
         optionA = optionB
         optionB = generateData()
         score += 1
-
-        print("Correct! 😊")
         createSpace()
+        print(f"Correct! 😊 Your score is currently : {score}")
     else :
         gameOver = True
 
 print("Game over. Thank you for playing!")
-print(f"Your score is {score}")
+print(f"Final Score  : {score}")

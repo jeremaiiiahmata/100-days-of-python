@@ -8,7 +8,7 @@ DESC = "description"
 COUNTRY = "country"
 
 def generateData():
-    index = random.randint(0, len(game_data.data)-1)
+    index = random.randint(0, len(game_data.data) - 1)
     return game_data.data[index]
 
 def compareCount(a, b):

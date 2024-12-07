@@ -4,13 +4,14 @@ from turtle import Turtle, Screen
 # timmy = turtle.Turtle() <---- when using 'import turtle'
 
 distance = 100
+coral = "coral"
 
 timmy = Turtle()
 myScreen = Screen()
 print("Initalizing...")
 
 timmy.shape("turtle")
-timmy.color("coral")
+timmy.color(coral)
 print("Changed color to coral")
 
 choice = input("Move forward? Type 'y' for yes or 'n' for no :")

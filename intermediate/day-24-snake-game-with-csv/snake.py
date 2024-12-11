@@ -30,6 +30,14 @@ class Snake:
     def extendSnakeBlock(self):
         self.addSnakeBlock(self.snake[-1].position())
 
+    def reset(self):
+        for block in self.snake:
+            block.goto(1000,1000)
+        self.snake.clear()
+        self.createSnake()
+        self.head = self.snake[0]
+
+
     def move(self):
         for each in range(len(self.snake) - 1, 0,-1):  # Sets the position of the next block to the current block, so it will be able to follow
             x = self.snake[each - 1].xcor()

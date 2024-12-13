@@ -1,6 +1,6 @@
 import pandas
 
-squirrelData = pandas.read_csv("./squirrel-count.csv")
+squirrelData = pandas.read_csv("data/squirrel-count.csv")
 
 
 grayCount = len(squirrelData[squirrelData["Primary Fur Color"] == "Gray"])
